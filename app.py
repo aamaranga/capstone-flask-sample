@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=['GET', 'POST'])
 def hello_world():
-    return "<h1>Hello Aida This is the world  of Cloud computing!</h1>"
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
